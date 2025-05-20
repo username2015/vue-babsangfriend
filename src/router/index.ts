@@ -1,4 +1,6 @@
 import { createRouter, createWebHistory } from 'vue-router';
+
+// 주요 페이지
 import Home from '../views/Home.vue';
 import About from '../views/About.vue';
 import Features from '../views/Features.vue';
@@ -10,7 +12,7 @@ import DevStory from '../views/DevStory.vue';
 import Contact from '../views/Contact.vue';
 import FAQ from '../views/FAQ.vue';
 
-// 상세 페이지 컴포넌트 import
+// 상세 기능 페이지
 import AiRecipe from '../views/AiRecipe.vue';
 import CookingTimer from '../views/CookingTimer.vue';
 import RecipeChallenge from '../views/RecipeChallenge.vue';
@@ -30,7 +32,7 @@ const routes = [
   { path: '/contact', name: 'Contact', component: Contact },
   { path: '/faq', name: 'FAQ', component: FAQ },
 
-  // 상세 페이지 경로 추가
+  // 상세 기능 페이지
   { path: '/ai-recipe', name: 'AiRecipe', component: AiRecipe },
   { path: '/cooking-timer', name: 'CookingTimer', component: CookingTimer },
   {
@@ -45,6 +47,9 @@ const routes = [
     name: 'HealthIntegration',
     component: HealthIntegration,
   },
+
+  // 존재하지 않는 경로는 홈으로 리디렉션 (선택 사항)
+  { path: '/:pathMatch(.*)*', redirect: '/' },
 ];
 
 const router = createRouter({
