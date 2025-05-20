@@ -48,5 +48,6 @@ export default defineConfig({
     alias: {
       '@': path.resolve(__dirname, './src'), // 👉 @를 src 폴더로 인식
     },
+    extensions: ['.ts', '.js', '.vue', '.json'],
   },
 });
