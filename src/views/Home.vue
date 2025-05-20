@@ -6,7 +6,7 @@
       <!-- 제목 -->
       <h1 class="text-6xl font-bold text-purple-900">주요 기능 안내</h1>
       <p class="text-lg text-gray-900 mt-3">
-        밥상친구 앱에서 제공하는 주요 기능들을 소개합니다.
+        밥상친구 앱에서 제공하는 주요 기능들을 소개합니다!.
       </p>
 
       <!-- 기능 카드들 -->
