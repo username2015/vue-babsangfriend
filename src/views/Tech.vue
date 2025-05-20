@@ -45,12 +45,10 @@
       </div>
     </div>
   </div>
-  <Footer />
 </template>
 
 <script setup lang="ts">
 import Header from '../components/Header.vue';
-import Footer from '../components/Footer.vue';
 
 const techStack = [
   { name: 'Vue', description: '프론트엔드 프레임워크' },
