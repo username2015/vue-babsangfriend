@@ -8,7 +8,6 @@ export default defineConfig({
     vue({
       template: {
         compilerOptions: {
-          // router-view, router-link 오류 방지용
           isCustomElement: (tag) =>
             tag === 'router-view' || tag === 'router-link',
         },
@@ -16,6 +15,10 @@ export default defineConfig({
     }),
     VitePWA({
       registerType: 'autoUpdate',
+      workbox: {
+        // 🔧 파일 캐싱 용량을 5MB로 증가 (기본 2MB → 5MB)
+        maximumFileSizeToCacheInBytes: 5 * 1024 * 1024,
+      },
       includeAssets: [
         'favicon.svg',
         'robots.txt',
@@ -46,7 +49,7 @@ export default defineConfig({
   ],
   resolve: {
     alias: {
-      '@': path.resolve(__dirname, './src'), // 👉 @를 src 폴더로 인식
+      '@': path.resolve(__dirname, './src'),
     },
     extensions: ['.ts', '.js', '.vue', '.json'],
   },
