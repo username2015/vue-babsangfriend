@@ -19,7 +19,7 @@ import Favorites from '../views/Favorites.vue';
 import HealthIntegration from '../views/HealthIntegration.vue';
 
 const routes = [
-  { path: '/', name: 'Home', component: Home },
+  { path: '/', redirect: '/features' },
   { path: '/about', name: 'About', component: About },
   { path: '/features', name: 'Features', component: Features },
   { path: '/preview', name: 'Preview', component: Preview },
