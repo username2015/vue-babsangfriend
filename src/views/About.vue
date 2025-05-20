@@ -37,7 +37,7 @@
         <div class="flex flex-wrap justify-center gap-6 mt-6">
           <div class="bg-white shadow-md rounded-lg p-4 w-40">
             <img
-              :src="photo1"
+              :src="heroImage"
               alt="Team Member 1"
               class="w-24 h-24 rounded-full mx-auto mb-2 object-cover"
             />
@@ -46,7 +46,7 @@
           </div>
           <div class="bg-white shadow-md rounded-lg p-4 w-40">
             <img
-              :src="photo2"
+              :src="teamImage"
               alt="Team Member 2"
               class="w-24 h-24 rounded-full mx-auto mb-2 object-cover"
             />
@@ -55,7 +55,7 @@
           </div>
           <div class="bg-white shadow-md rounded-lg p-4 w-40">
             <img
-              :src="photo3"
+              :src="menuImage"
               alt="Team Member 3"
               class="w-24 h-24 rounded-full mx-auto mb-2 object-cover"
             />
@@ -66,6 +66,7 @@
       </div>
     </div>
   </div>
+  <Footer />
 </template>
 
 <script setup lang="ts">
@@ -73,9 +74,9 @@ import Header from '../components/Header.vue';
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
 import Footer from '../components/Footer.vue';
 
-import photo1 from '../assets/photo1.jpg';
-import photo2 from '../assets/photo2.jpg';
-import photo3 from '../assets/photo3.jpg';
+import heroImage from '../assets/photo1.jpg';
+import teamImage from '../assets/photo2.jpg';
+import menuImage from '../assets/photo3.jpg';
 </script>
 
 <style scoped>
