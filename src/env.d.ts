@@ -1,16 +1,16 @@
 /// <reference types="vite/client" />
 
 declare module '*.jpg' {
-  const src: string;
-  export default src;
+  const jpgImagePath: string;
+  export default jpgImagePath;
 }
 
 declare module '*.png' {
-  const src: string;
-  export default src;
+  const pngImagePath: string;
+  export default pngImagePath;
 }
 
 declare module '*.jpeg' {
-  const src: string;
-  export default src;
+  const jpegImagePath: string;
+  export default jpegImagePath;
 }
