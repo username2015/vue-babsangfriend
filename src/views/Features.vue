@@ -59,6 +59,7 @@
 
 <script setup lang="ts">
 import Header from '../components/Header.vue';
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 import Footer from '../components/Footer.vue';
 </script>
 
