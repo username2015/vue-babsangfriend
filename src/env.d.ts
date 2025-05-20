@@ -2,16 +2,16 @@
 /// <reference types="vite-plugin-pwa/client" />
 
 declare module '*.jpg' {
-  const imgPath: string;
-  export default imgPath;
+  const jpgImagePath__custom: string;
+  export default jpgImagePath__custom;
 }
 
 declare module '*.png' {
-  const imgPath: string;
-  export default imgPath;
+  const pngImagePath__custom: string;
+  export default pngImagePath__custom;
 }
 
 declare module '*.jpeg' {
-  const imgPath: string;
-  export default imgPath;
+  const jpegImagePath__custom: string;
+  export default jpegImagePath__custom;
 }
