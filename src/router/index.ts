@@ -1,5 +1,5 @@
 import { createRouter, createWebHistory } from 'vue-router';
-
+import Home from '../views/Home.vue';
 import About from '../views/About.vue';
 import Features from '../views/Features.vue';
 import Preview from '../views/Preview.vue';
@@ -19,7 +19,7 @@ import Favorites from '../views/Favorites.vue';
 import HealthIntegration from '../views/HealthIntegration.vue';
 
 const routes = [
-  { path: '/', redirect: '/features' },
+  { path: '/', name: 'Home', component: Home },
   { path: '/about', name: 'About', component: About },
   { path: '/features', name: 'Features', component: Features },
   { path: '/preview', name: 'Preview', component: Preview },
