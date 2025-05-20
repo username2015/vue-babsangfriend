@@ -66,12 +66,10 @@
       </div>
     </div>
   </div>
-  <Footer />
 </template>
 
 <script setup lang="ts">
 import Header from '../components/Header.vue';
-import Footer from '../components/Footer.vue';
 
 import heroImage from '../assets/photo1.jpg';
 import teamImage from '../assets/photo2.jpg';
