@@ -5,18 +5,10 @@ import path from 'path';
 
 export default defineConfig({
   plugins: [
-    vue({
-      template: {
-        compilerOptions: {
-          isCustomElement: (tag) =>
-            tag === 'router-view' || tag === 'router-link',
-        },
-      },
-    }),
+    vue(),
     VitePWA({
       registerType: 'autoUpdate',
       workbox: {
-        // 🔧 파일 캐싱 용량을 5MB로 증가 (기본 2MB → 5MB)
         maximumFileSizeToCacheInBytes: 5 * 1024 * 1024,
       },
       includeAssets: [
