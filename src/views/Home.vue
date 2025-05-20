@@ -1,122 +1,43 @@
 <template>
-  <div class="min-h-screen bg-gradient-to-r from-blue-200 to-purple-300 p-4">
-    <Header />
-
-    <div class="max-w-screen-md mx-auto text-center py-14 px-4">
-      <!-- 제목 -->
-      <h1 class="text-6xl font-bold text-purple-900">주요 기능 안내</h1>
-      <p class="text-lg text-gray-900 mt-3">
-        밥상친구 앱에서 제공하는 주요 기능들을 소개합니다!.
+  <div
+    class="min-h-screen bg-gradient-to-br from-green-50 via-yellow-50 to-purple-50 flex flex-col items-center pt-32 pb-20 px-4"
+  >
+    <div
+      class="bg-white/90 backdrop-blur rounded-2xl shadow-2xl p-12 max-w-lg w-full mb-12 flex flex-col items-center animate-fade-in-up"
+    >
+      <span class="text-6xl mb-3">📱</span>
+      <h1 class="text-3xl font-extrabold text-green-700 mb-2">밥상친구 앱</h1>
+      <p class="text-lg text-gray-800 mb-6 text-center">
+        건강하고 편리한 식탁 생활을 시작해보세요!<br />
+        아래 버튼을 눌러 앱을 지금 바로 설치하세요.
       </p>
-
-      <!-- 기능 카드들 -->
-      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mt-10">
-        <div
-          class="bg-white shadow-2xl rounded-xl p-6 hover:scale-105 transition-transform flex flex-col items-center text-center animate-fade-in"
-        >
-          <span class="text-5xl mb-2">🧠</span>
-          <h2 class="text-2xl font-semibold text-gray-800">AI 추천 레시피</h2>
-          <p class="text-sm text-gray-600 mt-1">
-            개인 맞춤형 레시피를 제공합니다.
-          </p>
-          <router-link
-            to="/ai-recipe"
-            class="mt-4 bg-purple-500 text-white py-2 px-4 rounded hover:bg-purple-600 transition-colors"
-            >자세히 보기</router-link
-          >
-        </div>
-        <div
-          class="bg-white shadow-2xl rounded-xl p-6 hover:scale-105 transition-transform flex flex-col items-center text-center animate-fade-in"
-        >
-          <span class="text-5xl mb-2">⏲️</span>
-          <h2 class="text-2xl font-semibold text-gray-800">요리 타이머</h2>
-          <p class="text-sm text-gray-600 mt-1">
-            정확한 요리 시간을 제공합니다.
-          </p>
-          <router-link
-            to="/cooking-timer"
-            class="mt-4 bg-purple-500 text-white py-2 px-4 rounded hover:bg-purple-600 transition-colors"
-            >자세히 보기</router-link
-          >
-        </div>
-        <div
-          class="bg-white shadow-2xl rounded-xl p-6 hover:scale-105 transition-transform flex flex-col items-center text-center animate-fade-in"
-        >
-          <span class="text-5xl mb-2">🏆</span>
-          <h2 class="text-2xl font-semibold text-gray-800">레시피 챌린지</h2>
-          <p class="text-sm text-gray-600 mt-1">
-            다양한 요리 챌린지에 참여하세요.
-          </p>
-          <router-link
-            to="/recipe-challenge"
-            class="mt-4 bg-purple-500 text-white py-2 px-4 rounded hover:bg-purple-600 transition-colors"
-            >자세히 보기</router-link
-          >
-        </div>
-        <div
-          class="bg-white shadow-2xl rounded-xl p-6 hover:scale-105 transition-transform flex flex-col items-center text-center animate-fade-in"
-        >
-          <span class="text-5xl mb-2">🧑‍🍳</span>
-          <h2 class="text-2xl font-semibold text-gray-800">순서별 조리법</h2>
-          <p class="text-sm text-gray-600 mt-1">
-            단계별로 쉽게 따라할 수 있습니다.
-          </p>
-          <router-link
-            to="/step-by-step"
-            class="mt-4 bg-purple-500 text-white py-2 px-4 rounded hover:bg-purple-600 transition-colors"
-            >자세히 보기</router-link
-          >
-        </div>
-        <div
-          class="bg-white shadow-2xl rounded-xl p-6 hover:scale-105 transition-transform flex flex-col items-center text-center animate-fade-in"
-        >
-          <span class="text-5xl mb-2">💾</span>
-          <h2 class="text-2xl font-semibold text-gray-800">즐겨찾기 저장</h2>
-          <p class="text-sm text-gray-600 mt-1">
-            좋아하는 레시피를 저장하세요.
-          </p>
-          <router-link
-            to="/favorites"
-            class="mt-4 bg-purple-500 text-white py-2 px-4 rounded hover:bg-purple-600 transition-colors"
-            >자세히 보기</router-link
-          >
-        </div>
-        <div
-          class="bg-white shadow-2xl rounded-xl p-6 hover:scale-105 transition-transform flex flex-col items-center text-center animate-fade-in"
-        >
-          <span class="text-5xl mb-2">❤️</span>
-          <h2 class="text-2xl font-semibold text-gray-800">건강 연동</h2>
-          <p class="text-sm text-gray-600 mt-1">
-            헬스커넥트와 연동하여 건강을 관리하세요.
-          </p>
-          <router-link
-            to="/health-integration"
-            class="mt-4 bg-purple-500 text-white py-2 px-4 rounded hover:bg-purple-600 transition-colors"
-            >자세히 보기</router-link
-          >
-        </div>
-      </div>
+      <a
+        href="/apk/babsangfriend.apk"
+        download
+        class="bg-orange-500 text-white font-semibold px-6 py-3 rounded-lg hover:bg-orange-600 transition"
+      >
+        📥 앱 다운로드
+      </a>
     </div>
   </div>
-  <Footer />
 </template>
 
 <script setup lang="ts">
-import Header from '../components/Header.vue';
-import Footer from '../components/Footer.vue';
+// 필요한 경우 Header/Footer import
 </script>
 
 <style scoped>
-@keyframes fade-in {
+@keyframes fade-in-up {
   from {
     opacity: 0;
+    transform: translateY(30px);
   }
   to {
     opacity: 1;
+    transform: translateY(0);
   }
 }
-
-.animate-fade-in {
-  animation: fade-in 1s ease-in-out;
+.animate-fade-in-up {
+  animation: fade-in-up 1s ease-in-out;
 }
 </style>
