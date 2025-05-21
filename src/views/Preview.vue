@@ -32,8 +32,6 @@
 </template>
 
 <script setup lang="ts">
-import Header from '../components/Header.vue';
-
 const previews = [
   {
     src: 'https://via.placeholder.com/300',

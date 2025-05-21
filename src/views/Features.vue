@@ -56,9 +56,7 @@
   </div>
 </template>
 
-<script setup lang="ts">
-import Header from '../components/Header.vue';
-</script>
+<script setup lang="ts"></script>
 
 <style scoped>
 /* Add any additional styles here */
