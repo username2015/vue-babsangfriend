@@ -1,6 +1,6 @@
 <template>
   <div class="min-h-screen bg-gradient-to-r from-blue-200 to-purple-300 p-4">
-    <Header />
+    <HeroSection />
 
     <div class="max-w-screen-md mx-auto text-center py-14 px-4">
       <!-- 제목 -->
@@ -77,7 +77,7 @@
           </p>
           <router-link
             to="/fridge"
-            class="mt-4 bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600 transition-colors"
+            class="mt-4 bg-purple-500 text-white py-2 px-4 rounded hover:bg-purple-600 transition-colors"
           >
             자세히 보기
           </router-link>

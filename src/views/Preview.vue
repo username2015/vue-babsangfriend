@@ -1,7 +1,5 @@
 <template>
   <div class="min-h-screen bg-gradient-to-r from-yellow-100 to-orange-200 p-4">
-    <Header />
-
     <div class="max-w-screen-md mx-auto text-center py-14 px-4">
       <!-- 제목 -->
       <h1 class="text-5xl font-bold text-orange-800">앱 화면 미리보기</h1>
@@ -30,14 +28,11 @@
         <p class="text-xs text-gray-500 mt-2">← 좌우로 스크롤해보세요</p>
       </div>
     </div>
-
-    <Footer />
   </div>
 </template>
 
 <script setup lang="ts">
 import Header from '../components/Header.vue';
-import Footer from '../components/Footer.vue';
 
 const previews = [
   {

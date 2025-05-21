@@ -1,11 +1,20 @@
 <template>
-  <header class="bg-white shadow-md p-4 fixed top-0 w-full z-50">
-    <div class="container mx-auto flex justify-between items-center">
-      <!-- 로고/브랜드 -->
-      <a href="/" class="text-xl font-bold text-green-600"> 밥상친구 </a>
+  <header
+    class="fixed top-0 left-0 w-full z-50 bg-white/90 backdrop-blur-md shadow-md border-b border-gray-200"
+  >
+    <div
+      class="max-w-7xl mx-auto px-6 sm:px-8 h-16 flex items-center justify-between"
+    >
+      <!-- 로고 / 브랜드 -->
+      <router-link
+        to="/"
+        class="text-2xl font-extrabold text-green-600 hover:text-green-700 transition"
+      >
+        🍽️ 밥상친구
+      </router-link>
 
-      <!-- 햄버거 메뉴 아이콘 (모바일용) -->
-      <button class="md:hidden text-gray-600">
+      <!-- 모바일 햄버거 버튼 -->
+      <button class="md:hidden text-gray-600 hover:text-gray-900 transition">
         <svg
           class="w-6 h-6"
           fill="none"
@@ -25,10 +34,6 @@
   </header>
 </template>
 
-<script setup lang="ts">
-// 필요시 setup logic 작성
-</script>
-
 <style scoped>
-/* 추가 스타일 있으면 작성 */
+/* 필요 시 애니메이션 등 추가 가능 */
 </style>
