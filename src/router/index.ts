@@ -3,7 +3,7 @@ import { createRouter, createWebHistory } from 'vue-router';
 // 주요 페이지
 import Home from '../views/Home.vue';
 import About from '../views/About.vue';
-import Features from '../views/Features.vue';
+import Fridge from '../views/Fridge.vue';
 import Preview from '../views/Preview.vue';
 import Download from '../views/Download.vue';
 import Testimonial from '../views/Testimonial.vue';
@@ -17,13 +17,13 @@ import AiRecipe from '../views/AiRecipe.vue';
 import CookingTimer from '../views/CookingTimer.vue';
 import RecipeChallenge from '../views/RecipeChallenge.vue';
 import StepByStep from '../views/StepByStep.vue';
-import Favorites from '../views/Favorites.vue';
+import Fridges from '../views/Fridge.vue';
 import HealthIntegration from '../views/HealthIntegration.vue';
 
 const routes = [
   { path: '/', name: 'Home', component: Home },
   { path: '/about', name: 'About', component: About },
-  { path: '/features', name: 'Features', component: Features },
+  { path: '/fridge', name: 'Fridge', component: Fridge },
   { path: '/preview', name: 'Preview', component: Preview },
   { path: '/download', name: 'Download', component: Download },
   { path: '/testimonial', name: 'Testimonial', component: Testimonial },
@@ -41,7 +41,7 @@ const routes = [
     component: RecipeChallenge,
   },
   { path: '/step-by-step', name: 'StepByStep', component: StepByStep },
-  { path: '/favorites', name: 'Favorites', component: Favorites },
+  { path: '/fridge', name: 'Fridge', component: Fridge },
   {
     path: '/health-integration',
     name: 'HealthIntegration',
