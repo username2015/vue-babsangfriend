@@ -1,34 +1,37 @@
 <template>
-  <div class="min-h-screen bg-gradient-to-r from-yellow-100 to-orange-200 p-4">
-    <Header />
-
+  <div class="min-h-screen bg-gradient-to-r from-yellow-100 to-orange-200 p-6">
     <div class="max-w-screen-md mx-auto text-center py-14 px-4">
       <!-- 제목 -->
-      <h1 class="text-5xl font-bold text-orange-800">자주 묻는 질문</h1>
+      <h1 class="text-5xl font-bold text-purple-800 drop-shadow-sm">
+        자주 묻는 질문
+      </h1>
       <p class="text-lg text-gray-700 mt-3">
         밥상친구 앱을 사용하면서 자주 나오는 질문들을 정리했습니다.
       </p>
 
       <!-- FAQ 리스트 -->
-      <div class="mt-10 space-y-4 w-full text-left">
+      <div class="mt-12 space-y-4 w-full text-left">
         <div
           v-for="(faq, index) in faqs"
           :key="index"
-          class="bg-white rounded-xl shadow-md p-6 cursor-pointer hover:bg-gray-50 transition-all"
+          class="bg-white border-l-4 border-orange-400 rounded-xl shadow-md hover:shadow-lg p-6 cursor-pointer transition-all duration-200 transform hover:scale-[1.01]"
           @click="toggle(index)"
         >
           <div class="flex items-center justify-between">
             <h2 class="text-lg font-semibold text-gray-900">
               {{ faq.question }}
             </h2>
-            <span class="text-orange-500 text-xl">
+            <span
+              class="text-2xl font-bold text-orange-500 transition-transform duration-200"
+              :class="{ 'rotate-180': faq.open }"
+            >
               {{ faq.open ? '−' : '+' }}
             </span>
           </div>
-          <transition name="fade">
+          <transition name="slidefade">
             <p
               v-show="faq.open"
-              class="mt-3 text-gray-700 text-sm leading-relaxed"
+              class="mt-4 text-gray-700 text-sm leading-relaxed"
             >
               {{ faq.answer }}
             </p>
@@ -41,7 +44,6 @@
 
 <script setup lang="ts">
 import { ref } from 'vue';
-import Header from '../components/Header.vue';
 
 const faqs = ref([
   {
@@ -77,12 +79,21 @@ function toggle(index: number) {
 </script>
 
 <style scoped>
-.fade-enter-active,
-.fade-leave-active {
-  transition: opacity 0.3s ease;
+.slidefade-enter-active,
+.slidefade-leave-active {
+  transition: all 0.3s ease;
+  overflow: hidden;
 }
-.fade-enter-from,
-.fade-leave-to {
+.slidefade-enter-from,
+.slidefade-leave-to {
   opacity: 0;
+  transform: translateY(-8px);
+  max-height: 0;
+}
+.slidefade-enter-to,
+.slidefade-leave-from {
+  opacity: 1;
+  transform: translateY(0);
+  max-height: 500px;
 }
 </style>

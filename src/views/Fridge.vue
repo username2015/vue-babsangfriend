@@ -44,7 +44,7 @@
 
     <div class="mt-12">
       <router-link
-        to="/fridge"
+        to="/download"
         class="inline-flex items-center bg-blue-500 hover:bg-blue-600 text-white font-semibold px-6 py-3 rounded-full shadow-md transition focus:ring-2 focus:ring-blue-300"
       >
         <span class="mr-2 text-lg">🧊</span>

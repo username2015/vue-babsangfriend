@@ -1,45 +1,47 @@
 <template>
-  <div class="min-h-screen bg-gradient-to-r from-yellow-100 to-orange-200 p-4">
-    <Header />
-
-    <div class="max-w-screen-md mx-auto text-center py-14 px-4">
+  <div class="min-h-screen bg-gradient-to-r from-yellow-100 to-orange-200 p-6">
+    <div class="max-w-6xl mx-auto text-center py-14 px-4">
       <!-- 제목 -->
-      <h1 class="text-5xl font-bold text-orange-800">
+      <h1 class="text-5xl font-bold text-purple-800 drop-shadow-sm">
         기술 스택 및 개발 스토리
       </h1>
-      <p class="text-lg text-gray-700 mt-3">
+      <p class="text-lg text-gray-700 mt-4">
         밥상친구 앱을 구성한 핵심 기술과 개발 이야기를 소개합니다.
       </p>
 
       <!-- 기술 스택 -->
-      <div class="mt-10">
-        <h2 class="text-3xl font-bold text-orange-800 mb-6">기술 스택</h2>
+      <div class="mt-16">
+        <h2 class="text-3xl font-bold text-orange-700 mb-6">
+          🛠️ 사용된 기술 스택
+        </h2>
         <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
           <div
             v-for="(tech, index) in techStack"
             :key="index"
-            class="bg-white rounded-xl shadow-lg p-6 hover:scale-105 transition-transform text-gray-800 text-center"
+            class="bg-white rounded-2xl border-t-4 border-purple-300 shadow-md hover:shadow-xl p-6 transition-all transform hover:scale-105 flex flex-col items-center text-center"
           >
-            <div class="text-4xl mb-2">🔧</div>
-            <h3 class="text-xl font-semibold">{{ tech.name }}</h3>
+            <div class="text-4xl mb-3">🔧</div>
+            <h3 class="text-xl font-bold text-gray-900">{{ tech.name }}</h3>
             <p class="text-sm text-gray-600 mt-1">{{ tech.description }}</p>
           </div>
         </div>
       </div>
 
       <!-- 개발 스토리 -->
-      <div class="mt-16">
-        <h2 class="text-3xl font-bold text-orange-800 mb-6">개발 스토리</h2>
+      <div class="mt-20">
+        <h2 class="text-3xl font-bold text-orange-700 mb-6">📘 개발 스토리</h2>
         <div class="space-y-6 text-left">
           <div
             v-for="(story, index) in devStories"
             :key="index"
-            class="bg-white rounded-xl shadow-md p-6 hover:scale-105 transition-transform"
+            class="bg-white border-l-4 border-purple-300 rounded-xl shadow-md p-6 hover:shadow-lg transition-all hover:scale-[1.01]"
           >
-            <h3 class="text-xl font-semibold text-gray-900">
+            <h3 class="text-xl font-bold text-gray-900 mb-2">
               {{ story.title }}
             </h3>
-            <p class="text-sm text-gray-700 mt-2">{{ story.content }}</p>
+            <p class="text-sm text-gray-700 leading-relaxed">
+              {{ story.content }}
+            </p>
           </div>
         </div>
       </div>
@@ -48,8 +50,6 @@
 </template>
 
 <script setup lang="ts">
-import Header from '../components/Header.vue';
-
 const techStack = [
   { name: 'Vue', description: '프론트엔드 프레임워크' },
   { name: 'TypeScript', description: '정적 타입을 지원하는 자바스크립트' },
@@ -72,5 +72,5 @@ const devStories = [
 </script>
 
 <style scoped>
-/* 필요 시 추가 커스터마이징 */
+/* 필요 시 여기에 추가 스타일 작성 */
 </style>

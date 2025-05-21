@@ -4,10 +4,20 @@ import App from './App.vue';
 import router from './router';
 import './assets/main.css';
 
-// PWA 등록
+// 🌓 다크 모드 자동 감지 및 설정
+if (
+  localStorage.getItem('theme') === 'dark' ||
+  (!localStorage.getItem('theme') &&
+    window.matchMedia('(prefers-color-scheme: dark)').matches)
+) {
+  document.documentElement.classList.add('dark');
+} else {
+  document.documentElement.classList.remove('dark');
+}
+
+// 📦 PWA 등록
 import { registerSW } from 'virtual:pwa-register';
 
-// Service Worker 자동 등록
 registerSW({
   immediate: true,
   onRegistered(r) {
@@ -18,6 +28,7 @@ registerSW({
   },
 });
 
+// 앱 시작
 const app = createApp(App);
 app.use(router);
 app.mount('#app');

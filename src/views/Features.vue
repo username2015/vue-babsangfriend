@@ -1,6 +1,5 @@
 <template>
   <div class="min-h-screen bg-gradient-to-r from-yellow-100 to-orange-200 p-4">
-    <Header />
     <div class="max-w-screen-md mx-auto text-center">
       <h1 class="text-5xl font-bold text-orange-800">주요 기능 안내</h1>
       <p class="text-lg text-gray-600 mt-2">

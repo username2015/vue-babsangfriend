@@ -1,7 +1,5 @@
 <template>
   <div class="min-h-screen bg-gradient-to-r from-yellow-100 to-orange-200 p-4">
-    <Header />
-
     <div class="max-w-screen-md mx-auto text-center">
       <!-- 제목 영역 -->
       <h1 class="text-5xl font-bold text-orange-800 mt-6">앱 소개</h1>
@@ -41,7 +39,7 @@
               alt="Team Member 1"
               class="w-24 h-24 rounded-full mx-auto mb-2 object-cover"
             />
-            <h3 class="text-base font-bold">홍길동</h3>
+            <h3 class="text-base font-bold">팀장</h3>
             <p class="text-sm text-gray-600">개발자</p>
           </div>
           <div class="bg-white shadow-md rounded-lg p-4 w-40">
@@ -50,7 +48,7 @@
               alt="Team Member 2"
               class="w-24 h-24 rounded-full mx-auto mb-2 object-cover"
             />
-            <h3 class="text-base font-bold">김철수</h3>
+            <h3 class="text-base font-bold">개발자1</h3>
             <p class="text-sm text-gray-600">디자이너</p>
           </div>
           <div class="bg-white shadow-md rounded-lg p-4 w-40">
@@ -59,7 +57,16 @@
               alt="Team Member 3"
               class="w-24 h-24 rounded-full mx-auto mb-2 object-cover"
             />
-            <h3 class="text-base font-bold">이영희</h3>
+            <h3 class="text-base font-bold">개발자2</h3>
+            <p class="text-sm text-gray-600">기획자</p>
+          </div>
+          <div class="bg-white shadow-md rounded-lg p-4 w-40">
+            <img
+              :src="menuImage"
+              alt="Team Member 3"
+              class="w-24 h-24 rounded-full mx-auto mb-2 object-cover"
+            />
+            <h3 class="text-base font-bold">개발자3</h3>
             <p class="text-sm text-gray-600">기획자</p>
           </div>
         </div>
