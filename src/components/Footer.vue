@@ -86,7 +86,7 @@
       </a>
       <p class="text-xs text-gray-400">
         &copy; 2025
-        <span class="font-bold text-purple-600">Babsangchingu</span>. All rights
+        <span class="font-bold text-purple-600">BabsangFriend</span>. All rights
         reserved.
       </p>
     </div>
