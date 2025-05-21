@@ -17,9 +17,7 @@ import AiRecipe from '../views/AiRecipe.vue';
 import CookingTimer from '../views/CookingTimer.vue';
 import RecipeChallenge from '../views/RecipeChallenge.vue';
 import StepByStep from '../views/StepByStep.vue';
-import Fridges from '../views/Fridge.vue';
 import HealthIntegration from '../views/HealthIntegration.vue';
-
 const routes = [
   { path: '/', name: 'Home', component: Home },
   { path: '/about', name: 'About', component: About },
@@ -32,7 +30,6 @@ const routes = [
   { path: '/contact', name: 'Contact', component: Contact },
   { path: '/faq', name: 'FAQ', component: FAQ },
 
-  // 상세 기능 페이지
   { path: '/ai-recipe', name: 'AiRecipe', component: AiRecipe },
   { path: '/cooking-timer', name: 'CookingTimer', component: CookingTimer },
   {
@@ -41,14 +38,12 @@ const routes = [
     component: RecipeChallenge,
   },
   { path: '/step-by-step', name: 'StepByStep', component: StepByStep },
-  { path: '/fridge', name: 'Fridge', component: Fridge },
   {
     path: '/health-integration',
     name: 'HealthIntegration',
     component: HealthIntegration,
   },
 
-  // 존재하지 않는 경로는 홈으로 리디렉션 (선택 사항)
   { path: '/:pathMatch(.*)*', redirect: '/' },
 ];
 
