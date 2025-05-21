@@ -70,17 +70,19 @@
         <div
           class="bg-white shadow-2xl rounded-xl p-6 hover:scale-105 transition-transform flex flex-col items-center text-center animate-fade-in"
         >
-          <span class="text-5xl mb-2">💾</span>
-          <h2 class="text-2xl font-semibold text-gray-800">즐겨찾기 저장</h2>
+          <span class="text-5xl mb-2">🧊</span>
+          <h2 class="text-2xl font-semibold text-gray-800">냉장고 관리</h2>
           <p class="text-sm text-gray-600 mt-1">
-            좋아하는 레시피를 저장하세요.
+            유통기한 임박 재료나 장기 미사용 재료를 확인하세요.
           </p>
           <router-link
-            to="/favorites"
-            class="mt-4 bg-purple-500 text-white py-2 px-4 rounded hover:bg-purple-600 transition-colors"
-            >자세히 보기</router-link
+            to="/fridge"
+            class="mt-4 bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600 transition-colors"
           >
+            자세히 보기
+          </router-link>
         </div>
+
         <div
           class="bg-white shadow-2xl rounded-xl p-6 hover:scale-105 transition-transform flex flex-col items-center text-center animate-fade-in"
         >
