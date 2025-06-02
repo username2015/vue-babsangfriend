@@ -5,6 +5,7 @@ var vue_1 = require("vue");
 var App_vue_1 = require("./App.vue");
 var router_1 = require("./router");
 require("./assets/main.css");
+require("animate.css");
 // 🌓 다크 모드 자동 감지 및 설정
 if (localStorage.getItem('theme') === 'dark' ||
     (!localStorage.getItem('theme') &&
@@ -29,3 +30,11 @@ var virtual_pwa_register_1 = require("virtual:pwa-register");
 var app = (0, vue_1.createApp)(App_vue_1.default);
 app.use(router_1.default);
 app.mount('#app');
+app.directive('intersect', {
+    mounted: function (el, binding) {
+        var observer = new IntersectionObserver(function (entries) {
+            binding.value(entries, observer, el);
+        }, { threshold: 0.1 });
+        observer.observe(el);
+    }
+});
