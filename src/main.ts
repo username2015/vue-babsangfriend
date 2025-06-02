@@ -3,6 +3,7 @@ import { createApp } from 'vue';
 import App from './App.vue';
 import router from './router';
 import './assets/main.css';
+import 'animate.css'
 
 // 🌓 다크 모드 자동 감지 및 설정
 if (
