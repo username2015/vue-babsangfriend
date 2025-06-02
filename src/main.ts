@@ -32,3 +32,12 @@ registerSW({
 const app = createApp(App);
 app.use(router);
 app.mount('#app');
+
+app.directive('intersect', {
+  mounted(el, binding) {
+    const observer = new IntersectionObserver((entries) => {
+      binding.value(entries, observer, el)
+    }, { threshold: 0.1 })
+    observer.observe(el)
+  }
+})
