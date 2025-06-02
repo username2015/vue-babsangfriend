@@ -12,7 +12,7 @@
       <!-- 기능 카드들 -->
       <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mt-10">
         <div
-          class="bg-white shadow-2xl rounded-xl p-6 hover:scale-105 transition-transform flex flex-col items-center text-center animate-fade-in"
+          class="bg-white shadow-2xl rounded-xl p-6 hover:scale-105 hover:shadow-xl transition-all duration-300 flex flex-col items-center text-center animate-fade-in"
         >
           <span class="text-5xl mb-2">🧠</span>
           <h2 class="text-2xl font-semibold text-gray-800">AI 추천 레시피</h2>
@@ -26,7 +26,7 @@
           >
         </div>
         <div
-          class="bg-white shadow-2xl rounded-xl p-6 hover:scale-105 transition-transform flex flex-col items-center text-center animate-fade-in"
+          class="bg-white shadow-2xl rounded-xl p-6 hover:scale-105 hover:shadow-xl transition-all duration-300 flex flex-col items-center text-center animate-fade-in"
         >
           <span class="text-5xl mb-2">⏲️</span>
           <h2 class="text-2xl font-semibold text-gray-800">요리 타이머</h2>
@@ -40,7 +40,7 @@
           >
         </div>
         <div
-          class="bg-white shadow-2xl rounded-xl p-6 hover:scale-105 transition-transform flex flex-col items-center text-center animate-fade-in"
+          class="bg-white shadow-2xl rounded-xl p-6 hover:scale-105 hover:shadow-xl transition-all duration-300 flex flex-col items-center text-center animate-fade-in"
         >
           <span class="text-5xl mb-2">🏆</span>
           <h2 class="text-2xl font-semibold text-gray-800">레시피 챌린지</h2>
@@ -54,7 +54,7 @@
           >
         </div>
         <div
-          class="bg-white shadow-2xl rounded-xl p-6 hover:scale-105 transition-transform flex flex-col items-center text-center animate-fade-in"
+          class="bg-white shadow-2xl rounded-xl p-6 hover:scale-105 hover:shadow-xl transition-all duration-300 flex flex-col items-center text-center animate-fade-in"
         >
           <span class="text-5xl mb-2">🧑‍🍳</span>
           <h2 class="text-2xl font-semibold text-gray-800">순서별 조리법</h2>
@@ -68,7 +68,7 @@
           >
         </div>
         <div
-          class="bg-white shadow-2xl rounded-xl p-6 hover:scale-105 transition-transform flex flex-col items-center text-center animate-fade-in"
+          class="bg-white shadow-2xl rounded-xl p-6 hover:scale-105 hover:shadow-xl transition-all duration-300 flex flex-col items-center text-center animate-fade-in"
         >
           <span class="text-5xl mb-2">🧊</span>
           <h2 class="text-2xl font-semibold text-gray-800">냉장고 관리</h2>
@@ -84,7 +84,7 @@
         </div>
 
         <div
-          class="bg-white shadow-2xl rounded-xl p-6 hover:scale-105 transition-transform flex flex-col items-center text-center animate-fade-in"
+          class="bg-white shadow-2xl rounded-xl p-6 hover:scale-105 hover:shadow-xl transition-all duration-300 flex flex-col items-center text-center animate-fade-in"
         >
           <span class="text-5xl mb-2">❤️</span>
           <h2 class="text-2xl font-semibold text-gray-800">건강 연동</h2>

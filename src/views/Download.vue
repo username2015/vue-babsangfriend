@@ -15,7 +15,7 @@
 
       <!-- 다운로드 버튼 -->
       <a
-        href="/apk/babsangfriend.apk"
+        href="/apk/app-debug.apk"
         download
         class="bg-green-600 hover:bg-green-700 text-white font-semibold px-6 py-3 rounded-full shadow transition"
       >
