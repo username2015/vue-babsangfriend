@@ -7,7 +7,7 @@
 </template>
 
 <script lang="ts" setup>
-import { Motion as _Motion } from '@motionone/vue';
+//import { Motion } from '@motionone/vue';
 import NavBar from './components/NavBar.vue';
 import Footer from './components/Footer.vue';
 </script>
