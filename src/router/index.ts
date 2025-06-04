@@ -7,8 +7,6 @@ import Fridge from '../views/Fridge.vue';
 import Preview from '../views/Preview.vue';
 import Download from '../views/Download.vue';
 import Testimonial from '../views/Testimonial.vue';
-import Tech from '../views/Tech.vue';
-import DevStory from '../views/DevStory.vue';
 import Contact from '../views/Contact.vue';
 import FAQ from '../views/FAQ.vue';
 
@@ -25,8 +23,6 @@ const routes = [
   { path: '/preview', name: 'Preview', component: Preview },
   { path: '/download', name: 'Download', component: Download },
   { path: '/testimonial', name: 'Testimonial', component: Testimonial },
-  { path: '/tech', name: 'Tech', component: Tech },
-  { path: '/devstory', name: 'DevStory', component: DevStory },
   { path: '/contact', name: 'Contact', component: Contact },
   { path: '/faq', name: 'FAQ', component: FAQ },
 

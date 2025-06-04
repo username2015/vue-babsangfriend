@@ -74,7 +74,7 @@ let interval: ReturnType<typeof setInterval>
 onMounted(() => {
   interval = setInterval(() => {
     currentIndex.value = (currentIndex.value + 1) % images.length
-  }, 6000)
+  }, 3000)
 })
 
 onBeforeUnmount(() => {

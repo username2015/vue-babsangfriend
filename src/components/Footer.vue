@@ -69,7 +69,6 @@ const navLinks = [
   { to: '/', label: '홈' },
   { to: '/download', label: '다운로드' },
   { to: '/faq', label: 'FAQ' },
-  { to: '/tech', label: '기술정보' },
   { to: '/contact', label: '문의하기' },
 ]
 </script>

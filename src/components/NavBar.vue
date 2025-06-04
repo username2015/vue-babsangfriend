@@ -79,13 +79,11 @@ interface NavItem {
 const menuOpen: Ref<boolean> = ref(false);
 
 const navItems: NavItem[] = [
-  { to: '/', label: 'Home' },
-  { to: '/download', label: 'Download' },
-  { to: '/faq', label: 'FAQ' },
-  { to: '/testimonial', label: 'Testimonials' },
-  { to: '/tech', label: 'Tech' },
-  { to: '/devstory', label: 'Dev Story' },
-  { to: '/contact', label: 'Contact' },
+  { to: '/', label: '홈' },
+  { to: '/download', label: '다운로드' },
+  { to: '/faq', label: '자주 묻는 질문' },
+  { to: '/testimonial', label: '사용 후기' },
+  { to: '/contact', label: '문의' },
 ];
 
 const highlightStyle: Ref<CSSProperties> = ref<CSSProperties>({
