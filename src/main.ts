@@ -5,6 +5,7 @@ import router from './router';
 import './assets/main.css';
 import 'animate.css'
 
+
 // 🌓 다크 모드 자동 감지 및 설정
 if (
   localStorage.getItem('theme') === 'dark' ||
@@ -18,6 +19,7 @@ if (
 
 // 📦 PWA 등록
 import { registerSW } from 'virtual:pwa-register';
+import { MotionPlugin } from '@vueuse/motion';
 
 registerSW({
   immediate: true,
@@ -32,7 +34,9 @@ registerSW({
 // 앱 시작
 const app = createApp(App);
 app.use(router);
+app.use(MotionPlugin);
 app.mount('#app');
+
 
 app.directive('intersect', {
   mounted(el, binding) {
